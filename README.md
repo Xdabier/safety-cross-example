@@ -2,6 +2,12 @@
 
 This repository hosts an Angular application that demonstrates a custom calendar component capable of rendering a calendar in various unique shapes. The calendar is configured using a character map that defines pixel patterns for different symbols, and it can highlight specific dates with custom colors and texts.
 
+## Demo
+
+
+https://github.com/user-attachments/assets/eea2f683-a2f5-4c9c-bb80-77d7a48ed7d8
+
+
 ## Overview
 
 The application is organized into several components that together allow a user to:
