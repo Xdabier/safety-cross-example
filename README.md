@@ -48,6 +48,10 @@ The repo serves as an example implementation that can be extended or customized 
   - Each character (e.g., S, A, H, †, +) is associated with a matrix that dictates the shape of the calendar.
   - Serves as the foundation for rendering the custom grid pattern in the calendar component.
 
+## Use Case: Safety Cross Calendars in Dashboards
+
+This project is designed with the specific use case of implementing Safety Cross calendars within certain dashboards. Safety Cross calendars are used to visually represent performance, progress, or attendance metrics using a calendar format. Each cell in the grid can be marked with specific indicators (using colors and symbols) that correspond to safety performance data or compliance records. Integrating this calendar into dashboards enables quick visual inspection and identification of trends or issues in safety management, making it easier for stakeholders to monitor and act upon critical information.
+
 ## Running the Application
 
 1. **Install Dependencies**  
@@ -77,4 +81,4 @@ The repo serves as an example implementation that can be extended or customized 
 
 ## Conclusion
 
-This repository is a practical example of how Angular components can be combined to build flexible and visually interesting UI components. Whether you need a unique calendar for a project or want to explore custom rendering techniques, this setup provides a solid foundation for further experimentation and customization.
+This repository is a practical example of how Angular components can be combined to build flexible and visually interesting UI components. Whether you need a unique calendar for a project or want to explore custom rendering techniques for safety dashboards, this setup provides a solid foundation for further experimentation and customization.
