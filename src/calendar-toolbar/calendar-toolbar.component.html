@@ -1,0 +1,17 @@
+<div class="custom-shape-calendar-select-container">
+  <select [(ngModel)]="selectedCharacter" (ngModelChange)="selectedCharacterChange.emit($event)">
+    @for (index of charactersOptions; track index) {
+      <option [value]="index.value">{{ index.label }}</option>
+    }
+  </select>
+  <select [(ngModel)]="selectedYear" (ngModelChange)="selectedYearChange.emit($event)">
+    @for (year of years; track year) {
+      <option [value]="year.value">{{ year.label }}</option>
+    }
+  </select>
+  <select [(ngModel)]="selectedMonth" (ngModelChange)="selectedMonthChange.emit($event)">
+    @for (month of months; track month) {
+      <option [value]="month.value">{{ month.label }}</option>
+    }
+  </select>
+</div>

@@ -1,0 +1,11 @@
+<section class="container">
+  <app-calendar-toolbar
+    [selectedCharacter]="selectedCharacter"
+    [selectedYear]="selectedYear"
+    [selectedMonth]="selectedMonth"
+    (selectedCharacterChange)="onSelectedCharacterChange($event)"
+    (selectedYearChange)="onSelectedYearChange($event)"
+    (selectedMonthChange)="onSelectedMonthChange($event)"
+  />
+  <app-custom-shape-calendar [character]="selectedCharacter" [selectedDate]="getSelectedDate()" [markedDates]="markedDates" />
+</section>

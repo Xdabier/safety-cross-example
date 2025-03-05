@@ -1,0 +1,17 @@
+<div class="custom-shape-calendar-grid-container"
+     [style.width]="(cellSize * 7) + 'px'"
+>
+  @for (index of gridIndexes; track trackByGridIndex($index, index)) {
+    <div class="custom-shape-calendar-grid-cell"
+         [appCustomShapeCalendarTooltip]="getCellText(index)"
+         [style.background-color]="getCellColor(index)"
+         [style.width]="cellSize + 'px'"
+         [style.height]="cellSize + 'px'"
+         [class.custom-shape-calendar-is-a-day]="isCellADay(index)"
+         [class.custom-shape-calendar-is-part-of-character]="characterCellsArray.includes(index)">
+      <div class="custom-shape-calendar-day-info">
+        {{ dayInfoNumber(index) }}
+      </div>
+    </div>
+  }
+</div>

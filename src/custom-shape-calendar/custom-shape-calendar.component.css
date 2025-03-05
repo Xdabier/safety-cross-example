@@ -1,0 +1,33 @@
+.custom-shape-calendar-grid-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+
+.custom-shape-calendar-grid-cell {
+  background-color: white;
+  transition: background-color 0.2s;
+}
+
+.custom-shape-calendar-is-part-of-character {
+  background-color: #b2b5bd;
+  border: 1px solid #ccc;
+}
+
+.custom-shape-calendar-is-a-day {
+  background: #fff;
+}
+
+.custom-shape-calendar-custom-tooltip {
+  position: fixed;
+  background: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  z-index: 1000;
+  max-width: 320px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  pointer-events: none;
+}
